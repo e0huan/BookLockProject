@@ -1,0 +1,309 @@
+/* css associated with enterCode.html file */
+
+/* The 'Create a New Room' button */
+.btn{
+  position: absolute;
+  top: 75.7%;
+  left: 50%;
+  width: 22.5%;
+  height: 15.75%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #FF914D;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 150.875%;
+  padding: 1% 3%;
+  border: none;
+  transition: all 0.5s;
+  cursor: pointer;
+  border-radius: 2.5%;
+  text-align: center;
+  outline: none;
+}
+.btn {border-radius: 150px;}
+.btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.btn:hover {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #FFB689; 
+  color: white;
+}
+.btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.btn:hover span {
+  padding-right: 25px;
+}
+
+.btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* Enter code input */
+#code{
+  position: absolute;
+  top: 32%;
+  left: 35.7%;
+  width: 27.2%;
+  outline: none;
+  border: none;
+  background-color:rgba(0, 0, 0, 0);
+  border-bottom: 1px solid #FF914D;
+  font-size: 130%;
+}
+input, select, text{
+    color: #FF914D;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 130%;
+}
+text:focus, input:focus {
+    color: #FF914D;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 130%;
+}
+
+/* Make caret color same color as input text */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+text:-webkit-autofill,
+text:-webkit-autofill:hover,
+text:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: #FF914D;
+  transition: background-color 5000s ease-in-out 0s;
+  caret-color: #FF914D;
+  font-size: 130%;
+}
+
+/* Submit enter code input */
+.submitbtn{
+  position: absolute;
+  top: 38%;
+  left: 44.5%;
+  width: 10.5%;
+  height: 8.6%;
+  color: #FF914D;
+  background-color: rgba(0, 0, 0, 0);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 160%;
+  border: none;
+  outline:none;
+}
+.submitbtn:hover {
+  font-family: 'Open Sans', sans-serif;
+  color: #FF6100;
+}
+
+/* "Enter a Room Code" text */
+.text {
+  position: absolute;
+  top: 8.5%;
+  left: 36.5%;
+  font-family:'Open Sans', sans-serif;
+  color: #FF914D;
+  font-size:126%
+}
+
+/* "OR" text */
+p {
+  position: absolute;
+  top: 48.5%;
+  left: 48.2%;
+}
+
+/* Menu buttons */
+.newroom{
+  display: inline-block;
+  position: relative;
+  left: 0vw;
+  top: 2vw;
+  height: 70px;
+}
+a.btnnewroom{
+  margin-top: 50px;
+  position: relative;
+  left: 0vw;
+  top: -4vw;
+  line-height: 100px;
+  text-indent: -50px;
+}
+.profile{
+  display: inline-block;
+  position: relative;
+  left: 0vw;
+  top: 2vw;
+  height: 70px;
+}
+a.btnprofile{
+  position: relative;
+  left: 0vw;
+  top: -4vw;
+  line-height: 100px;
+  text-indent: -50px;
+}
+.yourroom{
+  display: inline-block;
+  position: relative;
+  left: 0vw;
+  top: 2vw;
+  height: 70px;
+}
+a.btnyourroom{
+  position: relative;
+  left: 0vw;
+  top: -4vw;
+  line-height: 100px;
+  text-indent: -50px;
+}
+.logout{
+  display: inline-block;
+  position: relative;
+  left: 0vw;
+  top: 2vw;
+  z-index:1;
+  height: 70px;
+}
+a.btnlogout{
+  position: relative;
+  left: 0vw;
+  top: -4vw;
+  z-index:1;
+  line-height: 100px;
+  text-indent: -50px;
+}
+
+/*The sidepanel menu inside one*/
+.sidepanel {
+  height: 250px; /*Specify a height*/
+  width: 0; /* 0 width - change this with JavaScript 
+  position: fixed; /* Stay in place*/
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll*/ 
+  padding-top: 60px; /* Place content 60px from the top*/ 
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+}
+ The sidepanel links 
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.5s;
+}
+
+/* When you mouse over the navigation links, change their color */
+/* Position and style the close button (top right corner) */
+/* Style the button that is used to open the sidepanel */
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(139, 107, 79, 0.582);
+  overflow: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.5s;
+  
+}
+.sidebar a:hover {
+  color: #000000;
+    background: #7bf4ff;
+    background: -webkit-linear-gradient(top, #c9a979,#a58969);
+}
+
+/*Sidepanel close */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  text-indent: -23px;
+}
+
+/* Sidepanel open button */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #668fb600;
+  color: blue;
+  padding: 10px 15px;
+  border: none;
+  z-index:1;
+  position: sticky;
+  top: 8vw;
+  left: 6vw;
+}
+.openbtn:hover {
+  color: black;
+}
+.openbtn {
+  font-size: 300%;
+  cursor: pointer;
+  background-color: #668fb600;
+  color: #FF914D;
+  padding: 10px 15px;
+  border: none;
+  z-index:1;
+  position: sticky;
+  top: 8vw;
+  left: 2.5vw;
+  outline: none;
+}
+.openbtn:hover {
+  color: black;
+}
+
+/* Hidden frame for output */
+.frame-container {
+  position: absolute;
+  top: 23.5%;
+  left: 35.25%; 
+  width: 28.9%; 
+  height: 6%;
+  background: #FFF1C7;
+}
+
+/* Exclamation mark for output */
+.fa_custom {
+  color: #FF914D;
+}
+
+/*Make sidepanel text font*/
+body{
+  font-family: "Lato", sans-serif;
+}

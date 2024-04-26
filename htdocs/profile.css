@@ -1,0 +1,294 @@
+/* This is the css associated with the elements in profile.php
+
+/* Elaine and Catherine */
+/*Body*/
+body{
+  overflow-x: hidden;
+  background-color: rgba(187, 58, 35, 0.726);
+}
+
+/*disabled button used to keep everything in place*/
+.btn{
+  font-size: 60px;
+  cursor: pointer;
+  background-color: #ffffff00;
+  color:rgba(255, 255, 255, 0);
+  border: none;
+  position: relative;
+  text-indent: 0vw;
+  z-index: -1;
+  outline: none;
+}
+
+/*table*/
+.table{
+  position: relative;
+  top:2vw;
+  table-layout: fixed;
+  width: 100px; 
+  height:10vw;
+  z-index: 2;
+}
+table, th, td {
+  border: 5px solid #DD7F6A;
+  border-collapse: collapse;
+  position: relative;
+  width: 100px; 
+  height:10vw;
+  table-layout: fixed;
+  left:5vw;
+  z-index: 2;
+}
+/*switch color every row, easier to look at visually*/
+tr:nth-child(even){
+  background-color: #f3d6d6a6;
+  color:#e61111;
+  width: 100px; 
+  table-layout: fixed;
+  height:10vw;
+}
+
+/*edit/save button*/
+.edit{
+  border: 5px solid #FFF1EE;
+  /*rgb(189, 30, 30);*/
+  border-radius: 25px;
+  background-color: #FFF1EE;
+  /*rgb(255, 0, 106); */
+  width:8vw;
+  height:4vw;
+  font-size: 20px;
+  z-index:3;
+  position: fixed;
+  top:43vw;
+  left:90vw;
+  outline: none;
+  font-family: 'Open Sans', sans-serif;
+}
+.edit:hover{
+  background-color: #FFB689;
+  border: 5px solid #FFB689;
+}
+
+/*image*/
+.prof{
+  position: relative;
+  top:1vw;
+  left:28vw;
+  z-index: -1; 
+}
+
+/*container to keep everything in place*/
+.bar-container {
+  width: 105%;
+  height: 30.5vw;
+  background: #fde0e0;
+  position: relative;
+  top:-8vw;
+  left:-1vw;
+  z-index: 0;
+}
+/*just the light-pink*/
+.ibar-container {
+  width: 105%;
+  height: 30.5vw;
+  background: (187, 58, 35, 0.726);
+  position: relative;
+  top:-8vw;
+  left:-1vw;
+  z-index: 0;
+}
+
+/*the "enter text" that shows up before you type, help indicate where you type*/
+.input:before {
+
+  color: rgba(59, 36, 32, 0.726);
+  content: 'Enter text:';
+  font-family: 'Open Sans', sans-serif;
+  padding-right: 8px;
+  padding-left: 8px;
+  font-weight: normal;
+}
+.input{
+  width: 500px;
+  display: inline-block;
+  margin: 1rem auto;
+  padding: 8px;
+  background: transparent;
+  outline: none;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  color:rgba(59, 36, 32, 0.726);
+  font-family: 'Open Sans', sans-serif;
+}
+
+/*menubar buttons*/
+.newroom{
+  display: inline-block;
+  position: relative;
+  left: 0vw;
+  top: 2vw;
+  height: 70px;
+}
+a.btnnewroom{
+  margin-top: 50px;
+  position: relative;
+  left: 0vw;
+  top: -4vw;
+  line-height: 100px;
+  text-indent: -50px;
+}
+.profile{
+  display: inline-block;
+  position: relative;
+  left: 0vw;
+  top: 2vw;
+  height: 70px;
+}
+a.btnprofile{
+  position: relative;
+  left: 0vw;
+  top: -4vw;
+  line-height: 100px;
+  text-indent: -50px;
+}
+.yourroom{
+  display: inline-block;
+  position: relative;
+  left: 0vw;
+  top: 2vw;
+  height: 70px;
+}
+a.btnyourroom{
+  position: relative;
+  left: 0vw;
+  top: -4vw;
+  line-height: 100px;
+  text-indent: -50px;
+}
+.logout{
+  display: inline-block;
+  position: relative;
+  left: 0vw;
+  top: 2vw;
+  z-index:1;
+  height: 70px;
+}
+a.btnlogout{
+  position: relative;
+  left: 0vw;
+  top: -4vw;
+  z-index:1;
+  line-height: 100px;
+  text-indent: -50px;
+}
+
+/*The sidepanel menu inside one*/
+.sidepanel {
+  height: 250px; 
+  width: 0; 
+  z-index: 3;
+  top: 0;
+  left: 0;
+  background-color: #111; 
+  overflow-x: hidden; 
+  padding-top: 60px;  
+  transition: 0.5s;
+}
+
+ The sidepanel links 
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.5s;
+}
+/*menu stuff seem*/
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(155, 57, 57, 0.582);
+  overflow: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.5s;
+  
+}
+.sidebar a:hover {
+  color: #000000;
+    background: #ff7b7b;
+    background: -webkit-linear-gradient(top, #d17777,#e66565);
+}
+/*x on menubar, to close*/
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  background-color: rgba(1, 0, 75, 0);
+  border:none;
+  text-indent: -23px;
+}
+/*button to open menu*/
+.openbtn {
+ font-size: 300%;
+  cursor: pointer;
+  background-color: #668fb600;
+  color: #DD7F6A;
+  padding: 10px 15px;
+  border: none;
+  z-index:1;
+  position: absolute;
+  top: 0vw;
+  left: 2.5vw;
+  outline: none;
+}
+.openbtn:hover {
+  color: rgb(148, 30, 30);
+}
+
+/*email*/
+#email {
+  position: absolute;
+  top: 75%;
+  left: 35%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 150%;
+  color: #DD7F6A;
+}
+
+/*heading of the table*/
+.columnames {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 150%;
+  color: #FFF1EE;
+  font-weight: normal;
+}
+
+/*Text inside columns*/
+.column{
+  text-align: center;
+  font-size: 20px;
+  color:rgba(59, 36, 32, 0.726);
+  font-family: 'Open Sans', sans-serif;
+}
+
+/*Make sidepanel text font*/
+body{
+  font-family: "Lato", sans-serif;
+}

@@ -1,0 +1,2 @@
+run = "bash start.sh -S 0.0.0.0:8080"
+entrypoint = "index.php"

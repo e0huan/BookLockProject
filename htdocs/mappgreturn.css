@@ -1,0 +1,464 @@
+/* rectangle with border on page*/
+.rectangle {
+  width: 93.6%;
+  height: 70.8%;
+  top: 14.7%;
+  left: 2.9%;
+  background-color: #656C8B;
+  position: absolute;
+  border-radius: 1%; 
+}
+.rectangle:before {
+  content: '';
+  width: 99.6%;
+  height: 99.2%;
+  background: #DCE6ED;;
+  display: block;
+  position: absolute;
+  top: 0.5%;
+  left: 0.2%;
+  border-radius: 0.7%; 
+}
+
+/* Room name */
+.par1{
+  position: absolute;
+  top: 0.1%;
+  right: 10%;
+  color: #656C8B;
+  font-size: 200%;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+}
+/* Room code */
+.par2{
+  position: absolute;
+  top: 0.1%;
+  left: 10%;
+  color: #656C8B;
+  font-size: 200%;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Squares availability legend */
+.availsquare {
+    position: absolute;
+    width: 3%;
+    height: 6%;
+    top: 90.2%;
+    left: 2.9%;
+    background: #FFD96A;
+}
+.textavail {
+    position: absolute;
+    top: 86%;
+    left: 8.5%;
+    font-size: 170%;
+    color: #656C8B;
+    font-family: 'Open Sans', sans-serif;
+}
+.unavailsquare {
+    position: absolute;
+    width: 3%;
+    height: 6%;
+    top: 90.2%;
+    left: 31%;
+    background: #656C8B;
+}
+.textunavail {
+    position: absolute;
+    top: 86%;
+    left: 36.6%;
+    font-size: 170%;
+    color: #656C8B;
+    font-family: 'Open Sans', sans-serif;
+}
+.ownsquare {
+    position: absolute;
+    width: 3%;
+    height: 6%;
+    top: 90.2%;
+    left: 61.1%;
+    background: #98A6E8;
+}
+.textown {
+    position: absolute;
+    top: 86%;
+    left: 66.7%;
+    font-size: 170%;
+    color: #656C8B;
+    font-family: 'Open Sans', sans-serif;
+}
+.newroom{
+  display: inline-block;
+  position: relative;
+  left: 0vw;
+  top: 2vw;
+  height: 70px;
+}
+
+/* Menu buttons*/
+a.btnnewroom{
+  margin-top: 50px;
+  position: relative;
+  left: 0vw;
+  top: -4vw;
+  line-height: 100px;
+  text-indent: -50px;
+}
+.profile{
+  display: inline-block;
+  position: relative;
+  left: 0vw;
+  top: 2vw;
+  height: 70px;
+}
+a.btnprofile{
+  position: relative;
+  left: 0vw;
+  top: -4vw;
+  line-height: 100px;
+  text-indent: -50px;
+}
+.yourroom{
+  display: inline-block;
+  position: relative;
+  left: 0vw;
+  top: 2vw;
+  height: 70px;
+}
+a.btnyourroom{
+  position: relative;
+  left: 0vw;
+  top: -4vw;
+  line-height: 100px;
+  text-indent: -50px;
+}
+.logout{
+  display: inline-block;
+  position: relative;
+  left: 0vw;
+  top: 2vw;
+  z-index:1;
+  height: 70px;
+}
+a.btnlogout{
+  position: relative;
+  left: 0vw;
+  top: -4vw;
+  z-index:1;
+  line-height: 100px;
+  text-indent: -50px;
+}
+
+/*The sidepanel menu inside one*/
+.sidepanel {
+  height: 250px; /*Specify a height*/
+  width: 0; /* 0 width - change this with JavaScript 
+  position: fixed; /* Stay in place*/
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll*/ 
+  padding-top: 60px; /* Place content 60px from the top*/ 
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+}
+ The sidepanel links 
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.5s;
+}
+
+/* When you mouse over the navigation links, change their color */
+/* Position and style the close button (top right corner) */
+/* Style the button that is used to open the sidepanel */
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  background-color: rgba(5, 3, 117, 0.582);
+  overflow: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.5s;
+  
+}
+.sidebar a:hover {
+  color: #000000;
+    background: #7bf4ff;
+    background: -webkit-linear-gradient(top, #ce77d1,#e665b4);
+}
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  text-indent: -23px;
+}
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #668fb600;
+  color: blue;
+  padding: 10px 15px;
+  border: none;
+  z-index:1;
+  position: sticky;
+  top: 8vw;
+  left: 6vw;
+}
+.openbtn:hover {
+  color: black;
+}
+.openbtn {
+  font-size: 300%;
+  cursor: pointer;
+  background-color: #668fb600;
+  color: #656C8B;
+  padding: 10px 15px;
+  border: none;
+  z-index:1;
+  position: sticky;
+  top: 8vw;
+  left: 2.5vw;
+  outline: none;
+}
+.openbtn:hover {
+  color: black;
+}
+
+/*container to hold the squares*/
+#container {
+  position: absolute;
+  z-index: -1;
+  background-color: #DCE6ED;
+  border: none;
+  top: 15.2%;
+  width:93.2%;
+  height: 70%;
+  left: 3.1%;
+}
+
+/* text on the squares with their number*/
+h1{
+  font-weight: normal;
+  font-size: 100%;
+  font-family: Open Sans;
+  height: 50%; 
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* booking squares*/
+square{
+  z-index: 1;
+  color: black;
+  position: absolute;
+  border: none;
+  outline: none;
+}
+
+/* The Booking Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 2; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  /* background-color: rgb(0,0,0); Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  border-radius: 50px;
+  margin: auto;
+  /*padding: 20px; */
+  border: 1px solid #888;
+  width: 40%;
+  height: 50%;
+  box-shadow: 10px 10px 60px #555;
+}
+
+/* The Close Button */
+.close {
+  position: relative;
+  right: 5%;
+  top: 5%;
+  color: #aaaaaa;
+  float: right;
+  font-size: 200%;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Confirm heading on modal */
+.booking {
+  position: relative;
+  color: #000;
+  font-weight: bold;
+  font-size: 200%;
+  top: 5%;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Text asking user to confirm their booking */
+.inquiry {
+  position: relative;
+  color: #000;
+  font-size: 170%;
+  top: 8%;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Confirm booking button */
+.confirm {
+  position: relative;
+  display: block;
+  border-radius: 12px;
+  height: 20%;
+  width: 30%;
+  margin: 0 auto;
+  top: 12%;
+  outline: none;
+  border: none;
+  background: #545454;
+  color: white;
+  font-size: 150%;
+  font-family: 'Open Sans', sans-serif;
+}
+.confirm:hover {
+  background: #B7BEDD;
+}
+
+/* Help instructions modal */
+.newmodal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 2; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  /* background-color: rgb(0,0,0); Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/* Modal Content */
+.newmodal-content {
+  background-color: #fefefe;
+  border-radius: 7%;
+  padding-left: 50px;
+  padding-bottom: 5%;
+  margin: auto;
+  /*padding: 20px; */
+  border: 1px solid #888;
+  width: 40%;
+  height: 50%;
+  box-shadow: 10px 10px 60px #555;
+}
+
+/* The Close Button */
+.newclose {
+  position: relative;
+  right: 5%;
+  top: 5%;
+  color: #aaaaaa;
+  float: right;
+  font-size: 200%;
+  font-weight: bold;
+}
+.newclose:hover,
+.newclose:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* instructions on help modal */
+.newinquiry {
+  position: relative;
+  color: #000;
+  font-size: 120%;
+  top: 8%;
+  text-align: left;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Question mark icon on help button */
+.bi_custom{
+  color: #656C8B;
+  position: relative;
+  display: block-inline;
+  width: 2.5vw;
+  height: 2.5vw;
+}
+
+/* Help button */
+#newmyBtn{
+  outline:none;
+  border:none;
+  border-radius:50px;
+  background:transparent;
+  position: absolute;
+  top:5%;
+  right:3%;
+}
+
+/* save/edit button */
+.edit {
+  position: absolute;
+  height: 6%;
+  width: 11.2%;
+  top: 89.7%;
+  left: 85.3%;
+  font-size: 170%;
+  padding-bottom: 3%;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  outline: none;
+  border: none;
+  background: grey;
+  border-radius: 5px;
+}
+.edit:hover{
+  background: #95B6B8;
+}
+
+/*Make sidepanel text font*/
+body{
+  font-family: "Lato", sans-serif;
+}
+
+

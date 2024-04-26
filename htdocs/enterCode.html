@@ -1,0 +1,66 @@
+<!-- This file is creates the 'New Room' page. It runs when the user clicks the "New Room" button on the menu/sidebar. Users have the option to enter the code for an existing room or create their own customized room. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Create a Room</title>
+  <link href="enterCode.css" rel="stylesheet" type="text/css">
+  <!-- Google font Open Sans Light -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<!-- body -->
+<body style="background-color:#FFF1C7;">
+
+<!-- Page heading -->
+<div class="text">
+  <h1>Enter a Room Code</h1>
+</div>
+
+<!-- Or for enter code or create your own options -->
+<p style="font-family:'Open Sans', sans-serif; color: #FF914D;font-size:200%;">OR</p>
+
+<!-- Hidden frame for output -->
+<div class="frame-container">
+  <iframe name="hiddenFrame" frameBorder="0" class="hide" height="100%" width="100%;"></iframe>
+</div>
+
+<!-- enter code form -->
+<form action="enterCode.php" method="post" target="hiddenFrame">
+  <input type="text" id="code" name="code" min="5" max "5">
+  <button class="submitbtn" name="submitbtn">Submit</button>
+  <button class="btn" name="createRoom" style="vertical-align:middle"><span>Create Your Own</span></button>
+</form>
+
+<!-- menu buttons-->
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="https://booklock.catherinezheng1.repl.co/enterCode.html" class="btnnewroom"><img class= "newroom" src='newroom.png' width="150" height= "100" display: "inline-block"/>New Room</a>
+  <a href="profile.php" class="btnprofile"><img class="profile" src='profile.png' width ="150" height="100" display:"inline-block"/>Profiles</a>
+   <a href="yourrooms.php" class="btnyourroom"><img class="yourroom" src='yourroom.png' width ="150" height="100" display:"inline-block"/>Your Room</a>
+  <a href="https://Homepage.elainehuang3.repl.co" class="btnprofile"><img class="profile" src='profile.png' width ="150" height="100" display:"inline-block"/>Sign Out</a>
+</div>
+
+<!-- Open menu button -->
+<div id="main">
+  <button id = "chicken" class="openbtn" onclick="openNav();">☰</button>  
+</div>
+
+<script>
+// Open menu and shift page content
+function openNav() {
+  document.getElementById("main").style.marginLeft = "25%";
+  document.getElementById("mySidebar").style.width = "25%";
+  document.getElementById("mySidebar").style.display="block"; document.getElementById("chicken").style.display="none";
+}
+
+// Cloes menu and return page content
+function closeNav() {
+  document.getElementById("main").style.marginLeft= "0%";
+  document.getElementById("mySidebar").style.display = 'none';
+  document.getElementById("chicken").style.display = 'inline-block';
+}
+</script>
+
+</body>
+</html> 

@@ -1,0 +1,292 @@
+/* This is the css for the elements in the yourrooms.php file.
+
+/*Elaine*/
+body{
+  background-color: rgba(160, 170, 226, 0.568);
+  overflow-x: hidden;
+  font-family: "Lato", sans-serif;
+  padding:0px;
+}
+/*disabled button used to keep the screen from shifting*/
+.btn{
+  font-size: 50px;
+  cursor: pointer;
+  background-color: #ffffff00;
+  color:rgba(255, 255, 255, 0);
+  border:none;
+  position: relative;
+  text-indent: 0vw;
+  z-index: -1;
+  outline: none;
+  
+}
+/*Your rooms*/
+h1{
+  text-align: center;
+  color: rgb(78, 76, 76);
+  position: relative;
+  margin-top: -5vw;
+  font:  2.0em/8vw "Roboto", sans-serif;
+}
+/*white line at the top*/
+.line{
+  width: 100%;
+  height: 0.3vw;
+  background: rgb(255, 255, 255);
+  position: relative;
+  top:-2vw;
+  left:0vw;
+  z-index: 0;
+}
+/*menu*/
+.sidepanel {
+  height: 250px; 
+  width: 0; 
+  z-index: 1; 
+  top: 0;
+  left: 0;
+  background-color: rgb(255, 255, 255); 
+  overflow-x: hidden; 
+  padding-top: 60px;
+  transition: 0.5s; 
+}
+
+ The sidepanel links 
+.sidepanel button {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  display: block;
+  transition: 0.5s;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(96, 95, 175, 0.479);
+  overflow: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar button {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.5s;
+  
+}
+
+.sidebar button:hover {
+  color: #ffffff;
+    background: #7bf4ff;
+    background: -webkit-linear-gradient(top, #7784d1,#a165e663);
+    outline: none;
+}
+/*close button on menu*/
+.sidebar .closebtn {
+  position: absolute;
+  background-color: rgba(1, 0, 75, 0);
+  border:none;
+  top: 0;
+  right: 0px;
+  font-size: 36px;
+  margin-left: 50px;
+  text-indent: -23px;
+}
+/*button to open menu*/
+.openbtn {
+  font-size: 50px;
+  cursor: pointer;
+  background-color: #ffffff00;
+  color:rgba(57, 28, 189, 0.712);
+  border:none;
+  position: relative;
+  text-indent: 6vw;
+  z-index: 1;
+
+}
+
+.openbtn:hover {
+  color: rgb(255, 255, 255);
+  border: none;
+  outline: none;
+}
+
+
+/*position of text and images for buttons on menubar*/
+.newroom{
+  display: inline-block;
+  position: relative;
+  left: 0vw;
+  top: 2vw;
+  height: 70px;
+}
+.btnnewroom{
+  margin-top: 50px;
+  position: relative;
+  width:100%;
+  left: 0vw;
+  top: -4vw;
+  line-height: 100px;
+  text-indent: -50px;
+  background-color: rgba(1, 0, 75, 0);
+  border:none;
+}
+.profile{
+  display: inline-block;
+  position: relative;
+  left: 0vw;
+  top: 2vw;
+  height: 70px;
+}
+.btnprofile{
+  position: relative;
+  left: 0vw;
+  top: -4vw;
+  line-height: 100px;
+  text-indent: -90px;
+  width:100%;
+  background-color: rgba(1, 0, 75, 0);
+  border:none;
+}
+.yourroom{
+  display: inline-block;
+  position: relative;
+  left: 0vw;
+  top: 2vw;
+  height: 70px;
+}
+.btnyourroom{
+  position: relative;
+  left: 0vw;
+  top: -4vw;
+  line-height: 100px;
+  text-indent: -50px;
+  width:100%;
+  background-color: rgba(1, 0, 75, 0);
+  border:none;
+}
+.logout{
+  display: inline-block;
+  position: relative;
+  left: 0vw;
+  top: 2vw;
+  z-index:1;
+  height: 70px;
+}
+.btnlogout{
+  position: relative;
+  left: 0vw;
+  top: -4vw;
+  z-index:1;
+  line-height: 100px;
+  text-indent: -80px;
+  width:100%;
+  background-color: rgba(1, 0, 75, 0);
+  border:none;
+  
+}
+/*links to the buttons to the rooms*/
+a:link {
+  background-color: rgb(2, 0, 112);
+  height: 30px;
+  width: 25%;
+  /* rgb(2, 0, 112) */
+  color: #635f5f;
+  padding: 14px 25px;
+  margin-right: 10px;
+  margin-left: 30px;
+  margin-bottom: 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  /*border: none; #ffffff98*/
+  border: 5px #ffffff98 solid;;
+  font-size: 140%;
+  border-radius: 15px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+a:visited {
+  /* rgb(150, 168, 248) */
+  background-color: rgb(150, 168, 248);
+}
+
+/* rgb(163, 200, 255) */
+a:hover { 
+  background-color: rgb(163, 200, 255);
+}
+
+a:active {
+  background-color: rgb(21, 22, 110);
+  color: white;
+} 
+.newmodal {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 2; /* Sit on top */
+padding-top: 100px; /* Location of the box */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+/* background-color: rgb(0,0,0); Fallback color */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.newmodal-content {
+background-color: #fefefe;
+border-radius: 50px;
+margin: auto;
+/*padding: 20px; */
+border: 1px solid #888;
+width: 40%;
+height: 50%;
+box-shadow: 10px 10px 60px #555;
+}
+
+/* The Close Button, on popout */
+.newclose {
+position: relative;
+right: 5%;
+top: 5%;
+color: #aaaaaa;
+float: right;
+font-size: 200%;
+font-weight: bold;
+}
+
+.newclose:hover,
+.newclose:focus {
+color: #000;
+text-decoration: none;
+cursor: pointer;
+}
+/*the question mark*/
+.bi_custom{
+  color: #656C8B;
+  position: relative;
+  display: block-inline;
+  width: 2.5vw;
+  height: 2.5vw;
+}
+/* mainly just used to move the buton as a whole*/
+#newmyBtn{
+  outline:none;
+  border:none;
+  border-radius:50px;
+  background:transparent;
+  position: absolute;
+  bottom:5%;
+  right:3%;
+}

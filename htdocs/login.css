@@ -1,0 +1,251 @@
+/* css for the loginpage.html file */
+
+/* Google Sign-In custom button */
+#customBtn {
+  display: inline-block;
+  background: white;
+  color: #747889;
+  width: 21.35%;
+  height: 9%;
+  padding-left:3.15%;
+  white-space: nowrap;
+  position: absolute;
+  left: 37.7%;
+  top: 16.5%;
+  border-radius: 1px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+  transition: background-color .218s, border-color .218s, box-shadow .218s;
+}
+#customBtn:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 3px 3px rgba(66, 133, 244, 0.3);
+  box-shadow: 0 0 3px 3px rgba(66, 133, 244, 0.3);
+}
+
+/* Google logo on button */
+span.icon {
+  background: url('GoogleLogo.png') transparent 5px 50% no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  padding-top: 19%;
+  width: 14%;
+}
+span.buttonText {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  padding-bottom: 1%;
+  padding-left: 2%;
+  /* Use the font that is loaded in the <head> */
+  font-family: 'Open Sans', sans-serif;
+  font-size:115.5%;
+}
+
+/* Square that holds the login form */
+.square {
+  position: absolute;
+  top: 5.7%;
+  left: 32%;
+  height: 90.5%;
+  width: 36.046%;
+  background-color: #656C8B;
+  z-index: -1;
+}
+
+/* Rectangular outline surrounding Google button for decoration */
+.rectangle {
+  width: 26.6%;
+  height: 13.4%;
+  top: 14.3%;
+  left: 36.7%;
+  background-color: white;
+  -webkit-clip-path: rectangle(100% 0, 100% 0, 100% 100%, 0 100%);
+  clip-path: rectangle(100% 0, 100% 0, 100% 100%, 0 100%);
+  position: absolute;
+}
+.rectangle:before {
+  content: '';
+  width: 98.9%;
+  height: 96%;
+  -webkit-clip-path: rectangle(100% 0, 100% 0, 100% 100%, 0 100%);
+  clip-path: rectangle(100% 0, 100% 0, 100% 100%, 0 100%);
+  background: #656C8B;
+  display: block;
+  position: absolute;
+  top: 2%;
+  left: 0.6%;
+}
+
+/* The "LOG IN" button */
+.btn{
+  position: absolute;
+  top: 84%;
+  left: 50%;
+  width: 16.5%;
+  height: 11.6%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #FFD96A;
+  color: #656C8B;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 161.875%;
+  padding: 1% 3%;
+  border: none;
+  transition: all 0.5s;
+  cursor: pointer;
+  border-radius: 2.5%;
+  text-align: center;
+  outline: none;
+}
+.btn {border-radius: 40px;}
+.btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.btn:hover {
+  font-family: 'Open Sans', sans-serif;
+  background-color: lightblue; 
+  color: #656C8B;
+}
+.btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.btn:hover span {
+  padding-right: 25px;
+}
+.btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* Input for user's email */
+#email{
+  position: absolute;
+  top: 42%;
+  left: 36.25%;
+  width: 26.9%;
+  border: none;
+  outline: none;  
+  background-color:rgba(0, 0, 0, 0);
+  border-bottom: 1px solid white;
+}
+input, select, email{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 100%;
+}
+email:focus, input:focus {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 100%;
+}
+
+/* Input for user password */
+#password {
+  position: absolute;
+  top: 62%;
+  left: 36.25%;
+  width: 26.9%;
+  border: none;
+  outline: none;  
+  background-color:rgba(0, 0, 0, 0);
+  border-bottom: 1px solid white;
+}
+input, select, password{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 100%;
+}
+password:focus, input:focus {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 100%;
+}
+
+/* Make caret same color as input text */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+text:-webkit-autofill,
+text:-webkit-autofill:hover,
+text:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: white;
+  transition: background-color 5000s ease-in-out 0s;
+  caret-color: white;
+}
+
+/* Login side panel button */
+.logbtn{
+  position: absolute;
+  top: 9%;
+  left: 25%;
+  width: 7%;
+  height: 85%;
+  padding-bottom: 15%;
+  border: none;
+  color: #656C8B;
+  background-color: #FFD96A;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 210%;
+  outline:none;
+}
+.logbtn:hover {
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+}
+
+/* Signup side panel button */
+.signupbtn{
+  position: absolute;
+  top: 9%;
+  left: 68%;
+  width: 7%;
+  height: 85%;
+  padding-bottom: 12%;
+  border: none;
+  color: #656C8B;
+  background-color: #FFD96A;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 210%;
+  outline:none;
+}
+.signupbtn:hover {
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+}
+
+/* Hidden frame that displays output after login form is submitted */
+.frame-container {
+  position: absolute;
+  top: 29.5%;
+  left: 35.25%; 
+  width: 28.9%; 
+  height: 8%;
+}
+
+/* Exclamation mark in triangle for output */
+.fa_custom {
+  color: #FFD96A;
+}
+
+/* Body */
+body, html {
+  height: 100%;
+  margin: 0;
+}
